@@ -24,4 +24,4 @@ mu -n node-3tier-app service push acceptance
 mu -n node-3tier-app service deploy acceptance
 mu -n node-3tier-app pipeline up
 ```
-This creates the web container, web task and web service as well as the pipeline for building the web container in the AWS acceptance environment. It's necessary to create the web tier after the api and database tier because the health of the web container relys on recieving a response from the api service. 
+This creates the web container, web task, web service as well as the pipeline for building the web container in the AWS ECS acceptance cluster. It's necessary to create the web tier after the api and database tier because the health of the web container relies on recieving a response from the api service. 
